@@ -14,7 +14,7 @@ pipeline {
             steps{
         sh '''ls -ltr
         touch test.txt
-        mkdir drilldevops'''
+        '''
             }
         }
     }
