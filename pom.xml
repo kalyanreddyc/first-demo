@@ -45,7 +45,7 @@
 	        <releaseVersion>1.0</releaseVersion> <!-- Set release version manually if needed -->
 	        <developmentVersion>1.1-SNAPSHOT</developmentVersion> <!-- Set next development version -->
 	        <autoVersionSubmodules>true</autoVersionSubmodules> <!-- Handle multi-module projects -->
-	        <!-- pushChanges>false</pushChanges --> <!-- Opt to not push changes automatically -->
+	        <pushChanges>false</pushChanges> <!-- Opt to not push changes automatically -->
 	        <localCheckout>true</localCheckout> <!-- Use a local checkout instead of remote -->
 	        <!-- SCM credentials, consider environment variables or settings.xml for security -->
 	        <scmCommentPrefix>[maven-release-plugin] </scmCommentPrefix> <!-- Custom prefix for SCM comments -->
@@ -87,9 +87,9 @@
             </activation>
         </profile>
     </profiles>
-	<scm>
-	    <connection>scm:git:https://github.com/kalyanreddyc/first-demo.git</connection>
-	  <tag>v1.0</tag>
+<scm>
+    <connection>scm:git:https://github.com/kalyanreddyc/first-demo.git</connection>
+  <tag>v1.0</tag>
   </scm>
 
 </project>
