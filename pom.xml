@@ -51,7 +51,6 @@
         <releaseVersion>1.0</releaseVersion> <!-- Set release version manually if needed -->
         <developmentVersion>1.1-SNAPSHOT</developmentVersion> <!-- Set next development version -->
         <autoVersionSubmodules>true</autoVersionSubmodules> <!-- Handle multi-module projects -->
-        <preventSnapshotDependencies>true</preventSnapshotDependencies> <!-- Prevent releasing with snapshot dependencies -->
         <pushChanges>false</pushChanges> <!-- Opt to not push changes automatically -->
         <localCheckout>true</localCheckout> <!-- Use a local checkout instead of remote -->
         <!-- SCM credentials, consider environment variables or settings.xml for security -->
@@ -65,11 +64,11 @@
       <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://your-nexus-server/repository/maven-snapshots/</url>
+            <url>http://3.82.25.62:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>nexus-releases</id>
-            <url>http://your-nexus-server/repository/maven-releases/</url>
+            <url>http://3.82.25.62:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
